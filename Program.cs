@@ -53,8 +53,8 @@ class Program
     {
         Product newProduct = new Product();
 
-        int productId; // Declare the variable here
-        decimal price; // Declare the variable here
+        int productId; 
+        decimal price; 
 
         Console.Write("Enter ProductID: ");
         while (!int.TryParse(Console.ReadLine(), out productId))
@@ -82,7 +82,7 @@ class Program
         Console.WriteLine("\nProducts List:");
         for (int i = 0; i < products.Count; i++)
         {
-            Console.WriteLine($"{i + 1}. ProductID: {products[i].ProductID}, Name: {products[i].Name}, Price: {products[i].Price:C}");
+            Console.WriteLine($"{i + 1}. ProductID: {products[i].ProductID}, Name: {products[i].Name}, Price:R {products[i].Price}");
         }
     }
 
